@@ -18,12 +18,8 @@ form.addEventListener('submit', (e) => {
         document.querySelector(".errorhanger").innerText = `a = 0 so the equation is unsolvable`
     } else {
         document.querySelector(".part1").innerText = `
-       
         Our equation is: \n ax + b = c 
        `
-
-       
-      
 
         document.querySelector(".part2").innerText = `
         Substuting values for a, b and c we get \n ${a}x + ${b} = ${c} 
