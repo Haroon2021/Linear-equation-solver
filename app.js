@@ -15,8 +15,21 @@ form.addEventListener('submit', (e) => {
     const c = parseFloat(linesDataTransformed['c']);
 
     if (a == 0) {
-        document.querySelector(".errorhanger").innerText = `a = 0 so teh equation is unsolvable`
+        document.querySelector(".errorhanger").innerText = `a = 0 so the equation is unsolvable`
     } else {
-        document.querySelector(".solving").innerText = `Our equation is: \n ax + b = c \n Substuting values for a, b and c we get \n ${a}x + ${b} = ${c} \n Rearranging we get: \n ${a}x = ${c-b} \n x = ${(c-b)/a}`
+        document.querySelector(".part1").innerText = `
+       
+        Our equation is: \n ax + b = c 
+       `
+
+       
+      
+
+        document.querySelector(".part2").innerText = `
+        Substuting values for a, b and c we get \n ${a}x + ${b} = ${c} 
+       `
+
+        document.querySelector(".part3").innerText = `
+        Rearranging we get: \n ${a}x = ${c-b} \n x = ${(c-b)/a}`
     }
 })
